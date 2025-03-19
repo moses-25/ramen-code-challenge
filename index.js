@@ -61,6 +61,7 @@ function addSubmitListener() {
             rating: parseInt(document.getElementById('rating').value, 10) || null,
             comment: document.getElementById('comment').value.trim() || null
         };
+        
 
         ramens.push(newRamen);
         displayRamens();
