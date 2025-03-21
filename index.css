@@ -1,44 +1,79 @@
+/* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: gray;
+    padding: 20px;
+    background-color: white;
 }
-
+#ramen-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.ramen-container {
+    text-align: center;
+}
 .ramen-image {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
 }
-#ramen-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-  gap: 10px;
-  padding: 20px;
-  background-color: antiquewhite;
-  border-radius: 8px;
+.ramen-name {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
 }
-/*style for ramen images*/
-.ramen-image {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.4s ease-in-out;
+#selected-ramen-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
 }
-/*hover effect for ramen images*/
-.ramen-image:hover {
-  transform: scale(1.1);
+#selected-ramen-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
 }
-/*responsive design*/
-@media (max-width: 768px) {
-  #ramen-container {
+#new-ramen-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+#new-ramen-form input, #new-ramen-form textarea {
+    width: 100%;
     padding: 10px;
-  }
-  .ramen-image {
-    width: 100px;
-    height: 100px;
-  }
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#new-ramen-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#new-ramen-form button:hover {
+    background-color: #0056b3;
+}
+#add-ramen-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#add-ramen-button:hover {
+    background-color: #218838;
 }
